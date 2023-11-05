@@ -10,16 +10,13 @@ it will state as such - then it will pop up the preferences so that you can ente
 the command of your choice. The widget takes command line-style commands for
 windows or Mac OS/X.
 
-![orrery-desktop](https://github.com/yereverluvinunclebert/Jupiter-Widget/assets/2788342/38dd8b6c-32ed-4a51-9704-61b2246a9fec)
-
 This is a simple RC/VB6 widget based upon one of my old Yahoo widgets, little more than a glorified desktop icon really. Just a selectable image of a Victorian stamp that responds to a double-click to open an application you choose to assign, in my case Thunderbird, the email client. A bit of background: The Yahoo widget SDK came with a Photoshop conversion script that could take any image and create a desktop widget within 30 seconds. This meant that you could create eye-candy desktop widgets with ease in just a few clicks. This penny red widget is a VB6 version of one of those, demonstrating the principle of creating such a desktop widget using VB6.
 
  ![vb6-logo-200](https://github.com/yereverluvinunclebert/Panzer-JustClock-VB6/assets/2788342/7986e544-0b94-4a10-90bb-2d9fb60c294a)
  
 Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in the guise of 100% compatible TwinBasic, coupled with support for transparent PNGs via Olaf Schmidt's RC/Cairo wrapper, VB6 code has an amazing future.
 
-![about](https://github.com/yereverluvinunclebert/Saturn-Ywidget/assets/2788342/acad321f-6a11-4c8c-92fa-9ed46abcec9a)
-
+![orrery-desktop](https://github.com/yereverluvinunclebert/Jupiter-Widget/assets/2788342/38dd8b6c-32ed-4a51-9704-61b2246a9fec)
  
  The Saturn widget is an attractive dieselpunk VB6 widget for your desktop. Functional and gorgeous at the same time. The graphics are my own. It is all my code with some help from the chaps at VBForums (credits given). This Widget is a moveable widget that you can move anywhere around the desktop as you require.
  
@@ -36,6 +33,8 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
  windows. Mouse hover over the widget and press CTRL+mousewheel up/down to resize. It works well on Windows XP 
  to Windows 11.
  
+ ![about](https://github.com/yereverluvinunclebert/Saturn-VB6-Widget/assets/2788342/6b8ea9af-a75b-4f82-9bfc-03e563ae17b7)
+
  The Saturn VB6 widget is Beta-grade software, under development, not yet 
  ready to use on a production system - use at your own risk.
 
@@ -49,8 +48,8 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
  is new VB6 widgets with more functionality and then hopefully, conversion of 
  each to RADBasic/TwinBasic for future-proofing and 64bit-ness. 
 
+![saturn-help-750](https://github.com/yereverluvinunclebert/Saturn-VB6-Widget/assets/2788342/87e9c7ac-8836-4a52-9218-c8cadf8e9e16)
 
- 
  This utility is one of a set of steampunk and dieselpunk widgets. That you can 
  find here on Deviantart: https://www.deviantart.com/yereverluvinuncleber/gallery
  
