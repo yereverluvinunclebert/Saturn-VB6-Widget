@@ -9,6 +9,7 @@ Begin VB.Form helpForm
    ControlBox      =   0   'False
    Icon            =   "frmHelp.frx":0000
    LinkTopic       =   "Form1"
+   Picture         =   "frmHelp.frx":1084A
    ScaleHeight     =   7800
    ScaleWidth      =   10215
    ShowInTaskbar   =   0   'False
@@ -20,7 +21,7 @@ Begin VB.Form helpForm
       ForeColor       =   &H80000008&
       Height          =   7815
       Left            =   0
-      Picture         =   "frmHelp.frx":1084A
+      Picture         =   "frmHelp.frx":4FF46
       ScaleHeight     =   7815
       ScaleWidth      =   10215
       TabIndex        =   0

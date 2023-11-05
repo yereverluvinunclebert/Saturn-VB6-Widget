@@ -224,7 +224,7 @@ Private Sub mnuEditWidget_Click()
     If fFExists(editorPath) Then ' if it is a folder already
         '''If debugflg = 1  Then msgBox "ShellExecute " & sCommand
         
-            ' run the selected program
+        ' run the selected program
         execStatus = ShellExecute(Me.hwnd, "open", editorPath, vbNullString, vbNullString, 1)
         If execStatus <= 32 Then MsgBox "Attempt to open the IDE for this widget failed."
     Else
