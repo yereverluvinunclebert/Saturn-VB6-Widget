@@ -1,0 +1,43 @@
+' convert penny red to saturn
+' build new HTML containing valid links - done
+' update github by hand - done
+' CHM built - done
+' test restart after reboot - done
+' create 32x32x16 icon for setup2go
+' create a bitmap for the splash screen used by setup2go
+' setup2go build new setup.exe - done
+' standard github update - done
+' manual update to github for the 17mb setup.exe - done
+
+' test on win 7 32bit - study 2nd PC - wip
+
+' -oOo-
+
+' Tasks yet to do to complete
+' ===========================
+
+' test on win XP 32bit blank install, no RC5 at all
+' test on ReactOS 32bit blank install, no RC5 at all
+
+' document showInTaskbar new option
+' add a debug form and debug commands
+
+' get current monitor? Add code to position the various forms on multiple monitors.
+' DPI awareness code from just Clock widget
+
+' -oOo-
+
+' Tasks yet to do in later versions.
+' ==================================
+
+' upload the code (no setup.exe) to the VBforums codebank
+
+' lightquick - resurrect
+
+' Deviantart for journal only. Test with rocketdock Part III HTML, create the journal blog using NVU as per the saved DA journal pt II, will be usable elsewhere.
+
+' softpedia
+' fosshub
+
+
+

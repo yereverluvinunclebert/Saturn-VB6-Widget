@@ -1,0 +1,1 @@
+start "" "Panzer Earth Gauge.exe" prefs
