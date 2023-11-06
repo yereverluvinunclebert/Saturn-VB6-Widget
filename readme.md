@@ -1,14 +1,14 @@
 # Saturn-Widget-VB6
-Steampunk Saturn Desktop Widget, written in VB6 for Windows and ReactOS. Created for XP, Vista, Win7, 8, 10+ as well as the Apple Mac with Wine. This Saturn Desktop Widget is an attractive dieselpunk Yahoo widget for your desktop. This VB6 widget provides a simple moveable marble globe compleet with rings
+Steampunk Saturn Desktop Widget, written in VB6 for Windows and ReactOS. Created for XP, Vista, Win7, 8, 10/11+, ReactOS as well as Linux or the Apple Mac's OS/X with Wine. This Saturn Desktop Widget is an attractive dieselpunk Yahoo widget for your desktop. This VB6 widget provides a simple moveable marble globe complete with rings
 
 ![saturn](https://github.com/yereverluvinunclebert/Saturn-Ywidget/assets/2788342/058486b4-6f2c-4c5f-b287-31afcd9015ca)
 
 The others are the 'God of War', the planet Mars, Saturn and of course, the Earth. 
-Double-clicking on the planet will cause a personalised Windows/Mac application 
+Double-clicking on the planet will cause a personalised Windows application 
 to fire up. The first time you run it there will be no assigned function and so 
 it will state as such - then it will pop up the preferences so that you can enter 
 the command of your choice. The widget takes command line-style commands for
-windows or Mac OS/X.
+windows.
 
 This is a simple RC/VB6 widget based upon one of my old Yahoo widgets, little more than a glorified desktop icon really. Just an image of a planetary body that responds to a double-click to open an application you choose to assign. A bit of background: The Yahoo widget SDK came with a Photoshop conversion script that could take any image and create a desktop widget within 30 seconds. This meant that you could create eye-candy desktop widgets with ease in just a few clicks. This planetary red widget is a VB6 version of one of those, demonstrating the principle of creating such a desktop widget using VB6.
 
@@ -123,7 +123,7 @@ If you are just a casual user of desktop programs then simply download the SETUP
  
  Dependencies:
  
- o A windows-alike o/s such as Windows XP, 7-11 or Apple Mac OSX 11. 
+ o A windows-alike o/s such as Windows XP, 7-11, ReactOS or Linux/Wine, Apple Mac OSX 11+ Wine. 
  
  o Microsoft VB6 IDE installed with its runtime components. The program runs 
  without any additional Microsoft OCX components, just the basic controls that 
