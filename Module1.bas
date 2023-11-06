@@ -1485,7 +1485,7 @@ Public Sub mnuSupport_ClickEvent()
     answer = MsgBox("Visiting the support page - this button opens a browser window and connects to our Github issues page where you can send us a support query. Proceed?", vbExclamation + vbYesNo)
 
     If answer = vbYes Then
-        Call ShellExecute(menuForm.hwnd, "Open", "https://github.com/yereverluvinunclebert/Penny-Red-VB6-Widget/issues", vbNullString, App.Path, 1)
+        Call ShellExecute(menuForm.hwnd, "Open", "https://github.com/yereverluvinunclebert/Saturn-VB6-Widget/issues", vbNullString, App.Path, 1)
     End If
 
    On Error GoTo 0
