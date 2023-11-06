@@ -10,7 +10,7 @@ it will state as such - then it will pop up the preferences so that you can ente
 the command of your choice. The widget takes command line-style commands for
 windows or Mac OS/X.
 
-This is a simple RC/VB6 widget based upon one of my old Yahoo widgets, little more than a glorified desktop icon really. Just a selectable image of a Victorian stamp that responds to a double-click to open an application you choose to assign, in my case Thunderbird, the email client. A bit of background: The Yahoo widget SDK came with a Photoshop conversion script that could take any image and create a desktop widget within 30 seconds. This meant that you could create eye-candy desktop widgets with ease in just a few clicks. This penny red widget is a VB6 version of one of those, demonstrating the principle of creating such a desktop widget using VB6.
+This is a simple RC/VB6 widget based upon one of my old Yahoo widgets, little more than a glorified desktop icon really. Just an image of a planetary body that responds to a double-click to open an application you choose to assign. A bit of background: The Yahoo widget SDK came with a Photoshop conversion script that could take any image and create a desktop widget within 30 seconds. This meant that you could create eye-candy desktop widgets with ease in just a few clicks. This planetary red widget is a VB6 version of one of those, demonstrating the principle of creating such a desktop widget using VB6.
 
  ![vb6-logo-200](https://github.com/yereverluvinunclebert/Panzer-JustClock-VB6/assets/2788342/7986e544-0b94-4a10-90bb-2d9fb60c294a)
  
