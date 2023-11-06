@@ -474,7 +474,7 @@ Public Sub adjustMainControls()
     ' validate the inputs of any data from the input settings file
     Call validateInputs
     
-    saturnWidget.RotationSpeed = Val(PrsaturnSelection)
+    ' saturnWidget.RotationSpeed = Val(PrsaturnSelection)
     saturnWidget.Zoom = Val(PrGaugeSize) / 100
     saturnWidget.ZoomDirection = PrScrollWheelDirection
     
@@ -484,11 +484,11 @@ Public Sub adjustMainControls()
     End If
     
     If PrGaugeFunctions = "1" Then
-        saturnWidget.Rotating = True
+        'saturnWidget.Rotating = True
         menuForm.mnuSwitchOff.Checked = False
         menuForm.mnuTurnFunctionsOn.Checked = True
     Else
-        saturnWidget.Rotating = False
+        'saturnWidget.Rotating = False
         menuForm.mnuSwitchOff.Checked = True
         menuForm.mnuTurnFunctionsOn.Checked = False
     End If

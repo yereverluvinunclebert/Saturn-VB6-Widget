@@ -577,7 +577,7 @@ End Sub
 Private Sub mnuSwitchOff_Click()
    On Error GoTo mnuSwitchOff_Click_Error
 
-    saturnWidget.Rotating = False
+    'saturnWidget.Rotating = False
     mnuSwitchOff.Checked = True
     mnuTurnFunctionsOn.Checked = False
     
@@ -609,7 +609,7 @@ Private Sub mnuTurnFunctionsOn_Click()
         PlaySound App.Path & "\resources\sounds\" & fileToPlay, ByVal 0&, SND_FILENAME Or SND_ASYNC
     End If
 
-    saturnWidget.Rotating = True
+    'saturnWidget.Rotating = True
     mnuSwitchOff.Checked = False
     mnuTurnFunctionsOn.Checked = True
     
