@@ -57,6 +57,8 @@ Why VB6? Well, with a 64 bit, modern-language improvement upgrade on the way in 
  enhancements and contributions will be gratefully received if you choose to 
  contribute.
 
+![prefs-about](https://github.com/yereverluvinunclebert/Saturn-VB6-Widget/assets/2788342/ae06acd3-d911-48d0-bf9c-d4cc90059696)
+
 INSTALLATION :
 
 If you are just a casual user of desktop programs then simply download the SETUP.EXE and run it. If you are a developer and you want to make changes to the code then read on.
@@ -92,8 +94,8 @@ If you are just a casual user of desktop programs then simply download the SETUP
 	Windows 10 Home 64bit on AMD    
 	Windows 11 64bit on Intel  
    
- CREDITS:
- 
+ CREDITS:![menu01](https://github.com/yereverluvinunclebert/Saturn-VB6-Widget/assets/2788342/308bd3c6-d3b6-47be-9e16-f60e89e2957e)
+
  I have really tried to maintain the credits as the project has progressed. If I 
  have made a mistake and left someone out then do forgive me. I will make amends 
  if anyone points out my mistake in leaving someone out.
