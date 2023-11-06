@@ -28,7 +28,7 @@ Private surroundxo As Integer
 Private surroundyo As Integer
 Private saturnxo As Integer
 Private saturnyo  As Integer
-Private earthCounter As Integer
+'Private earthCounter As Integer
 
 Private WithEvents W As cWidgetBase
 Attribute W.VB_VarHelpID = -1
@@ -70,7 +70,7 @@ Private Sub Class_Initialize()
 
     saturnxo = 15: saturnyo = 27
     
-    earthCounter = 1
+    'earthCounter = 1
       
     Set W = Cairo.WidgetBase '<- this is required in each cwImplementation...
         W.BorderColor = &H444444
@@ -102,7 +102,7 @@ Private Sub initialiseVars() ' set all vars to zero
 
     saturnxo = 0: saturnyo = 0
     
-    earthCounter = 0
+   'earth Counter = 0
 
     On Error GoTo 0
     Exit Sub
@@ -461,10 +461,10 @@ Private Sub tmrRotate_Timer()
         Set tmrRotate = Nothing
         Exit Sub
     End If
-    earthCounter = earthCounter + 1
-    If earthCounter >= 36 Then
-      earthCounter = 1
-    End If
+'    earthCounter = earthCounter + 1
+'    If earthCounter >= 36 Then
+'      earthCounter = 1
+'    End If
     W.Refresh
 
    On Error GoTo 0

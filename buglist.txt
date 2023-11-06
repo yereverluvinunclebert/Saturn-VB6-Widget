@@ -9,6 +9,11 @@
 ' standard github update - done
 ' manual update to github for the 17mb setup.exe - done
 
+' update the help - done
+' update the CHM - done
+' build new setup2go - done
+' synch to github - done
+
 ' test on win 7 32bit - study 2nd PC - wip
 
 ' -oOo-

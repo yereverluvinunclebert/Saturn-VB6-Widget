@@ -30,7 +30,7 @@ Description="A FOSS Saturn VB6 Widget for Windows"
 CompatibleMode="0"
 MajorVer=1
 MinorVer=0
-RevisionVer=3
+RevisionVer=6
 AutoIncrementVer=1
 ServerSupportFiles=0
 VersionComments="Beta-release version. "
@@ -69,5 +69,3 @@ RevisionVersion=0
 
 [Rubberduck]
 ProjectId=a0ae84c9-9850-4906-bf10-2db1a174a682
-
-

@@ -482,7 +482,7 @@ Public Sub mnuLatest_Click()
     answer = MsgBox("Download latest version of the program from github - this button opens a browser window and connects to the widget download page where you can check and download the latest SETUP.EXE file). Proceed?", vbExclamation + vbYesNo)
 
     If answer = vbYes Then
-        Call ShellExecute(Me.hwnd, "Open", "https://github.com/yereverluvinunclebert/Saturn-VB6-Widget", vbNullString, App.Path, 1)
+        Call ShellExecute(Me.hwnd, "Open", "https://github.com/yereverluvinunclebert/Saturn-VB6-Widget/raw/main/Setup.exe", vbNullString, App.Path, 1)
     End If
 
 
