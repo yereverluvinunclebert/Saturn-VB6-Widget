@@ -395,7 +395,9 @@ Private Declare Function PathIsDirectory Lib "shlwapi" Alias "PathIsDirectoryA" 
 
 '------------------------------------------------------ ENDS
                             
-     
+Public softwarePlanet As String
+Public thisPlanet As String
+
 '---------------------------------------------------------------------------------------
 ' Procedure : fFExists
 ' Author    : RobDog888 https://www.vbforums.com/member.php?17511-RobDog888
@@ -620,7 +622,7 @@ Public Sub checkLicenceState()
     
     ' read the tool's own settings file
     If fFExists(StSettingsFile) Then ' does the tool's own settings.ini exist?
-        slicence = fGetINISetting("Software\Saturn", "Licence", StSettingsFile)
+        slicence = fGetINISetting(softwarePlanet, "Licence", StSettingsFile)
         ' if the licence state is not already accepted then display the licence form
         If slicence = "0" Then
             Call LoadFileToTB(frmLicence.txtLicenceTextBox, App.Path & "\Resources\txt\licence.txt", False)
@@ -1584,8 +1586,8 @@ Public Sub makeVisibleFormElements()
 
     'NOTE that when you position a widget you are positioning the form it is drawn upon.
 
-    fMain.saturnForm.Left = Val(fGetINISetting("Software\Saturn", "maximiseFormX", StSettingsFile)) ' / screenPixelsPerPixelX
-    fMain.saturnForm.Top = Val(fGetINISetting("Software\Saturn", "maximiseFormY", StSettingsFile)) ' / screenPixelsPerPixelY
+    fMain.saturnForm.Left = Val(fGetINISetting(softwarePlanet, "maximiseFormX", StSettingsFile)) ' / screenPixelsPerPixelX
+    fMain.saturnForm.Top = Val(fGetINISetting(softwarePlanet, "maximiseFormY", StSettingsFile)) ' / screenPixelsPerPixelY
 
     ' The RC forms are measured in pixels, do remember that...
 
@@ -1854,8 +1856,8 @@ Public Sub saturnForm_Unload() ' name follows VB6 standard naming convention
     PrMaximiseFormX = Str$(fMain.saturnForm.Left) ' saving in pixels
     PrMaximiseFormY = Str$(fMain.saturnForm.Top)
     
-    sPutINISetting "Software\Saturn", "maximiseFormX", PrMaximiseFormX, StSettingsFile
-    sPutINISetting "Software\Saturn", "maximiseFormY", PrMaximiseFormY, StSettingsFile
+    sPutINISetting softwarePlanet, "maximiseFormX", PrMaximiseFormX, StSettingsFile
+    sPutINISetting softwarePlanet, "maximiseFormY", PrMaximiseFormY, StSettingsFile
     
     Call unloadAllForms(True)
 
@@ -2008,8 +2010,8 @@ Public Sub readPrefsPosition()
             
    On Error GoTo readPrefsPosition_Error
 
-    PrFormXPosTwips = fGetINISetting("Software\Saturn", "formXPos", StSettingsFile)
-    PrFormYPosTwips = fGetINISetting("Software\Saturn", "formYPos", StSettingsFile)
+    PrFormXPosTwips = fGetINISetting(softwarePlanet, "formXPos", StSettingsFile)
+    PrFormYPosTwips = fGetINISetting(softwarePlanet, "formYPos", StSettingsFile)
 
     ' if a current location not stored then position to the middle of the screen
     If PrFormXPosTwips <> "" Then
@@ -2047,8 +2049,8 @@ Public Sub writePrefsPosition()
         PrFormYPosTwips = LTrim$(Str$(saturnPrefs.Top))
         
         ' now write those params to the toolSettings.ini
-        sPutINISetting "Software\Saturn", "formXPos", PrFormXPosTwips, StSettingsFile
-        sPutINISetting "Software\Saturn", "formYPos", PrFormYPosTwips, StSettingsFile
+        sPutINISetting softwarePlanet, "formXPos", PrFormXPosTwips, StSettingsFile
+        sPutINISetting softwarePlanet, "formYPos", PrFormYPosTwips, StSettingsFile
     End If
     
     On Error GoTo 0

@@ -120,7 +120,7 @@ Private Sub declineLabel_Click()
 
     Call saturnForm_Unload
     
-    sPutINISetting "Software\Saturn", "Licence", slicence, StSettingsFile
+    sPutINISetting softwarePlanet, "Licence", slicence, StSettingsFile
     End
 
    On Error GoTo 0
@@ -154,7 +154,7 @@ Private Sub Label2_Click()
     frmLicence.Hide
     slicence = "1"
     
-    sPutINISetting "Software\Saturn", "Licence", slicence, StSettingsFile
+    sPutINISetting softwarePlanet, "Licence", slicence, StSettingsFile
 
    On Error GoTo 0
    Exit Sub

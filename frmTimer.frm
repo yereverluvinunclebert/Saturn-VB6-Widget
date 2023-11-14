@@ -97,7 +97,7 @@ Private Sub revealWidgetTimer_Timer()
         saturnWidget.Hidden = False
         revealWidgetTimer.Enabled = False
         PrWidgetHidden = "0"
-        sPutINISetting "Software\Saturn", "widgetHidden", PrWidgetHidden, StSettingsFile
+        sPutINISetting softwarePlanet, "widgetHidden", PrWidgetHidden, StSettingsFile
     End If
 
     On Error GoTo 0
@@ -163,11 +163,11 @@ Private Sub settingsTimer_Timer()
     
     On Error GoTo settingsTimer_Timer_Error
 
-    PrUnhide = fGetINISetting("Software\Saturn", "unhide", StSettingsFile)
+    PrUnhide = fGetINISetting(softwarePlanet, "unhide", StSettingsFile)
 
     If PrUnhide = "true" Then
         saturnWidget.Hidden = False
-        sPutINISetting "Software\Saturn", "unhide", vbNullString, StSettingsFile
+        sPutINISetting softwarePlanet, "unhide", vbNullString, StSettingsFile
     End If
 
     On Error GoTo 0

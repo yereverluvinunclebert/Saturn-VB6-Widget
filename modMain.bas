@@ -251,7 +251,7 @@ Public Sub mainRoutine(ByVal restart As Boolean)
     Call getToolSettingsFile
     
     ' read the dock settings from the new configuration file
-    Call readSettingsFile("Software\Saturn", StSettingsFile)
+    Call readSettingsFile(softwarePlanet, StSettingsFile)
         
     ' check first usage and display licence screen
     Call checkLicenceState
@@ -318,7 +318,7 @@ Private Sub checkFirstTime()
 
     If PrFirstTimeRun = "true" Then
         PrFirstTimeRun = "false"
-        sPutINISetting "Software\Saturn", "firstTimeRun", PrFirstTimeRun, StSettingsFile
+        sPutINISetting softwarePlanet, "firstTimeRun", PrFirstTimeRun, StSettingsFile
     End If
 
    On Error GoTo 0
@@ -340,6 +340,9 @@ End Sub
 Private Sub initialiseGlobalVars()
       
     On Error GoTo initialiseGlobalVars_Error
+
+    thisPlanet = "\Saturn"
+    softwarePlanet = "Software" & thisPlanet
 
     ' general
     PrStartup = vbNullString
@@ -617,8 +620,8 @@ Public Sub readSettingsFile(ByVal location As String, ByVal StSettingsFile As St
         PrDefaultEditor = fGetINISetting(location, "defaultEditor", StSettingsFile)
         
         ' other
-        PrMaximiseFormX = fGetINISetting("Software\Saturn", "maximiseFormX", StSettingsFile)
-        PrMaximiseFormY = fGetINISetting("Software\Saturn", "maximiseFormY", StSettingsFile)
+        PrMaximiseFormX = fGetINISetting(softwarePlanet, "maximiseFormX", StSettingsFile)
+        PrMaximiseFormY = fGetINISetting(softwarePlanet, "maximiseFormY", StSettingsFile)
         PrLastSelectedTab = fGetINISetting(location, "lastSelectedTab", StSettingsFile)
         PrSkinTheme = fGetINISetting(location, "skinTheme", StSettingsFile)
         
@@ -870,7 +873,7 @@ Private Sub handleUnhideMode(ByVal thisUnhideMode As String)
 
     If thisUnhideMode = "unhide" Then     'parse the command line
         PrUnhide = "true"
-        sPutINISetting "Software\Saturn", "unhide", PrUnhide, StSettingsFile
+        sPutINISetting softwarePlanet, "unhide", PrUnhide, StSettingsFile
         Call saturnForm_Unload
         End
     End If

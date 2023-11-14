@@ -319,7 +319,7 @@ Private Sub mnuHideWidget_Click()
     frmTimer.revealWidgetTimer.Enabled = True
     PrWidgetHidden = "1"
     ' we have to save the value here
-    sPutINISetting "Software\Saturn", "widgetHidden", PrWidgetHidden, StSettingsFile
+    sPutINISetting softwarePlanet, "widgetHidden", PrWidgetHidden, StSettingsFile
 
    On Error GoTo 0
    Exit Sub
@@ -356,7 +356,7 @@ Private Sub mnuLockWidget_Click()
         PrPreventDragging = "1"
     End If
 
-    sPutINISetting "Software\Saturn", "preventDragging", PrPreventDragging, StSettingsFile
+    sPutINISetting softwarePlanet, "preventDragging", PrPreventDragging, StSettingsFile
 
    On Error GoTo 0
    Exit Sub
@@ -582,7 +582,7 @@ Private Sub mnuSwitchOff_Click()
     mnuTurnFunctionsOn.Checked = False
     
     PrGaugeFunctions = "0"
-    sPutINISetting "Software\Saturn", "gaugeFunctions", PrGaugeFunctions, StSettingsFile
+    sPutINISetting softwarePlanet, "gaugeFunctions", PrGaugeFunctions, StSettingsFile
 
    On Error GoTo 0
    Exit Sub
@@ -614,7 +614,7 @@ Private Sub mnuTurnFunctionsOn_Click()
     mnuTurnFunctionsOn.Checked = True
     
     PrGaugeFunctions = "1"
-    sPutINISetting "Software\Saturn", "gaugeFunctions", PrGaugeFunctions, StSettingsFile
+    sPutINISetting softwarePlanet, "gaugeFunctions", PrGaugeFunctions, StSettingsFile
 
    On Error GoTo 0
    Exit Sub

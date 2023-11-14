@@ -194,8 +194,8 @@ Private Sub saturnForm_MouseUp(Button As Integer, Shift As Integer, X As Single,
        PrMaximiseFormX = Str$(saturnForm.Left) ' saving in pixels
        PrMaximiseFormY = Str$(saturnForm.Top)
        
-       sPutINISetting "Software\Saturn", "maximiseFormX", PrMaximiseFormX, StSettingsFile
-       sPutINISetting "Software\Saturn", "maximiseFormY", PrMaximiseFormY, StSettingsFile
+       sPutINISetting softwarePlanet, "maximiseFormX", PrMaximiseFormX, StSettingsFile
+       sPutINISetting softwarePlanet, "maximiseFormY", PrMaximiseFormY, StSettingsFile
     End If
     
     'Static x0, y0: If Button Then saturnForm.Move saturnForm.Left + X - x0, saturnForm.Top + Y - y0 Else x0 = X: y0 = Y

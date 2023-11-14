@@ -2116,7 +2116,7 @@ Private Sub chkWidgetHidden_Click()
         PrWidgetHidden = "1"
     End If
     
-    sPutINISetting "Software\Saturn", "widgetHidden", PrWidgetHidden, StSettingsFile
+    sPutINISetting softwarePlanet, "widgetHidden", PrWidgetHidden, StSettingsFile
     
     btnSave.Enabled = True ' enable the save button
 
@@ -2607,48 +2607,48 @@ Private Sub btnSave_Click()
 
     ' save the values from the general tab
     If fFExists(StSettingsFile) Then
-        sPutINISetting "Software\Saturn", "enableTooltips", PrEnableTooltips, StSettingsFile
-        sPutINISetting "Software\Saturn", "enableBalloonTooltips", PrEnableBalloonTooltips, StSettingsFile
-        sPutINISetting "Software\Saturn", "showTaskbar", PrShowTaskbar, StSettingsFile
+        sPutINISetting softwarePlanet, "enableTooltips", PrEnableTooltips, StSettingsFile
+        sPutINISetting softwarePlanet, "enableBalloonTooltips", PrEnableBalloonTooltips, StSettingsFile
+        sPutINISetting softwarePlanet, "showTaskbar", PrShowTaskbar, StSettingsFile
         
-        sPutINISetting "Software\Saturn", "gaugeSize", PrGaugeSize, StSettingsFile
-        sPutINISetting "Software\Saturn", "scrollWheelDirection", PrScrollWheelDirection, StSettingsFile
+        sPutINISetting softwarePlanet, "gaugeSize", PrGaugeSize, StSettingsFile
+        sPutINISetting softwarePlanet, "scrollWheelDirection", PrScrollWheelDirection, StSettingsFile
                 
-        sPutINISetting "Software\Saturn", "gaugeFunctions", PrGaugeFunctions, StSettingsFile
-        sPutINISetting "Software\Saturn", "saturnSelection", PrsaturnSelection, StSettingsFile
-        'sPutINISetting "Software\Saturn", "widgetSkew", 'PrWidgetSkew, StSettingsFile
+        sPutINISetting softwarePlanet, "gaugeFunctions", PrGaugeFunctions, StSettingsFile
+        sPutINISetting softwarePlanet, "saturnSelection", PrsaturnSelection, StSettingsFile
+        'sPutINISetting softwarePlanet, "widgetSkew", 'PrWidgetSkew, StSettingsFile
         
-        sPutINISetting "Software\Saturn", "aspectHidden", PrAspectHidden, StSettingsFile
-        sPutINISetting "Software\Saturn", "widgetPosition", PrWidgetPosition, StSettingsFile
-        sPutINISetting "Software\Saturn", "widgetLandscape", PrWidgetLandscape, StSettingsFile
-        sPutINISetting "Software\Saturn", "widgetPortrait", PrWidgetPortrait, StSettingsFile
+        sPutINISetting softwarePlanet, "aspectHidden", PrAspectHidden, StSettingsFile
+        sPutINISetting softwarePlanet, "widgetPosition", PrWidgetPosition, StSettingsFile
+        sPutINISetting softwarePlanet, "widgetLandscape", PrWidgetLandscape, StSettingsFile
+        sPutINISetting softwarePlanet, "widgetPortrait", PrWidgetPortrait, StSettingsFile
 
-        sPutINISetting "Software\Saturn", "prefsFont", PrPrefsFont, StSettingsFile
-        sPutINISetting "Software\Saturn", "prefsFontSize", PrPrefsFontSize, StSettingsFile
-        sPutINISetting "Software\Saturn", "prefsFontItalics", PrPrefsFontItalics, StSettingsFile
-        sPutINISetting "Software\Saturn", "prefsFontColour", PrPrefsFontColour, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFont", PrPrefsFont, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFontSize", PrPrefsFontSize, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFontItalics", PrPrefsFontItalics, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFontColour", PrPrefsFontColour, StSettingsFile
 
         'save the values from the Windows Config Items
-        sPutINISetting "Software\Saturn", "windowLevel", PrWindowLevel, StSettingsFile
-        sPutINISetting "Software\Saturn", "preventDragging", PrPreventDragging, StSettingsFile
+        sPutINISetting softwarePlanet, "windowLevel", PrWindowLevel, StSettingsFile
+        sPutINISetting softwarePlanet, "preventDragging", PrPreventDragging, StSettingsFile
         
-        sPutINISetting "Software\Saturn", "opacity", PrOpacity, StSettingsFile
-        sPutINISetting "Software\Saturn", "widgetHidden", PrWidgetHidden, StSettingsFile
-        sPutINISetting "Software\Saturn", "hidingTime", PrHidingTime, StSettingsFile
-        sPutINISetting "Software\Saturn", "ignoreMouse", PrIgnoreMouse, StSettingsFile
+        sPutINISetting softwarePlanet, "opacity", PrOpacity, StSettingsFile
+        sPutINISetting softwarePlanet, "widgetHidden", PrWidgetHidden, StSettingsFile
+        sPutINISetting softwarePlanet, "hidingTime", PrHidingTime, StSettingsFile
+        sPutINISetting softwarePlanet, "ignoreMouse", PrIgnoreMouse, StSettingsFile
         
-        sPutINISetting "Software\Saturn", "startup", PrStartup, StSettingsFile
+        sPutINISetting softwarePlanet, "startup", PrStartup, StSettingsFile
 
-        sPutINISetting "Software\Saturn", "enableSounds", PrEnableSounds, StSettingsFile
-        sPutINISetting "Software\Saturn", "lastSelectedTab", PrLastSelectedTab, StSettingsFile
+        sPutINISetting softwarePlanet, "enableSounds", PrEnableSounds, StSettingsFile
+        sPutINISetting softwarePlanet, "lastSelectedTab", PrLastSelectedTab, StSettingsFile
         
-        sPutINISetting "Software\Saturn", "debug", PrDebug, StSettingsFile
-        sPutINISetting "Software\Saturn", "dblClickCommand", PrDblClickCommand, StSettingsFile
-        sPutINISetting "Software\Saturn", "openFile", PrOpenFile, StSettingsFile
-        sPutINISetting "Software\Saturn", "defaultEditor", PrDefaultEditor, StSettingsFile
+        sPutINISetting softwarePlanet, "debug", PrDebug, StSettingsFile
+        sPutINISetting softwarePlanet, "dblClickCommand", PrDblClickCommand, StSettingsFile
+        sPutINISetting softwarePlanet, "openFile", PrOpenFile, StSettingsFile
+        sPutINISetting softwarePlanet, "defaultEditor", PrDefaultEditor, StSettingsFile
         
-        sPutINISetting "Software\Saturn", "maximiseFormX", PrMaximiseFormX, StSettingsFile
-        sPutINISetting "Software\Saturn", "maximiseFormY", PrMaximiseFormY, StSettingsFile
+        sPutINISetting softwarePlanet, "maximiseFormX", PrMaximiseFormX, StSettingsFile
+        sPutINISetting softwarePlanet, "maximiseFormY", PrMaximiseFormY, StSettingsFile
 
         'save the values from the Text Items
 
@@ -2725,10 +2725,10 @@ Private Sub btnPrefsFont_Click()
     PrPrefsFontColour = CStr(fntColour)
 
     If fFExists(StSettingsFile) Then ' does the tool's own settings.ini exist?
-        sPutINISetting "Software\Saturn", "prefsFont", PrPrefsFont, StSettingsFile
-        sPutINISetting "Software\Saturn", "prefsFontSize", PrPrefsFontSize, StSettingsFile
-        sPutINISetting "Software\Saturn", "prefsFontItalics", PrPrefsFontItalics, StSettingsFile
-        sPutINISetting "Software\Saturn", "PrefsFontColour", PrPrefsFontColour, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFont", PrPrefsFont, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFontSize", PrPrefsFontSize, StSettingsFile
+        sPutINISetting softwarePlanet, "prefsFontItalics", PrPrefsFontItalics, StSettingsFile
+        sPutINISetting softwarePlanet, "PrefsFontColour", PrPrefsFontColour, StSettingsFile
     End If
     
     If fntFont = vbNullString Then fntFont = "arial"
@@ -3628,7 +3628,7 @@ Private Sub picButtonMouseUpEvent(ByVal thisTabName As String, ByRef thisPicName
     Call clearBorderStyle
 
     PrLastSelectedTab = thisTabName
-    sPutINISetting "Software\Saturn", "lastSelectedTab", PrLastSelectedTab, StSettingsFile
+    sPutINISetting softwarePlanet, "lastSelectedTab", PrLastSelectedTab, StSettingsFile
 
     thisFraName.Visible = True
     thisFraButtonName.BorderStyle = 1
@@ -3992,7 +3992,7 @@ Private Sub setThemeShade(ByVal redC As Integer, ByVal greenC As Integer, ByVal 
     saturnPrefs.sliOpacity.BackColor = RGB(redC, greenC, blueC)
     saturnPrefs.txtAboutText.BackColor = RGB(redC, greenC, blueC)
     
-    sPutINISetting "Software\Saturn", "skinTheme", PrSkinTheme, StSettingsFile ' now saved to the toolsettingsfile
+    sPutINISetting softwarePlanet, "skinTheme", PrSkinTheme, StSettingsFile ' now saved to the toolsettingsfile
 
     On Error GoTo 0
     Exit Sub
