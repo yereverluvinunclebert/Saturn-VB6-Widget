@@ -33,7 +33,7 @@ WindowsNT4=Yes
 Windows2000=Yes
 WindowsXP=Yes
 LoginAsAdmin=No
-RequiredDiskSpace=50000
+RequiredDiskSpace=58000
 AbortInstallation=Yes
 
 [DIALOGS]
@@ -56,7 +56,7 @@ FinishDialog=Yes
 
 [SPLASH_WINDOW]
 Bitmap_Pathname=E:\vb6\Saturn-VB6-Widget\Resources\images\saturnSplash.bmp
-Bitmap_Duration=1
+Bitmap_Duration=2
 
 [SETUP_WINDOW]
 WindowTitle=Setup
@@ -287,6 +287,7 @@ File=%AppDir%\buglist.txt,.\buglist.txt,17,0,128
 File=%AppDir%\CCRSlider.ocx,.\CCRSlider.ocx,17,2,128
 File=%AppDir%\GPL LICENCE.TXT,.\GPL LICENCE.TXT,17,0,128
 File=%AppDir%\unhide.bat,.\unhide.bat,17,0,128
+File=%AppDir%\prefs.bat,.\prefs.bat,17,0,128
 
 [SHORTCUTS]
 
