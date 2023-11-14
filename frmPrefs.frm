@@ -2600,9 +2600,9 @@ Private Sub btnSave_Click()
     PrDefaultEditor = txtDefaultEditor.Text
             
     If PrStartup = "1" Then
-        Call savestring(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "SaturnWidget", """" & App.Path & "\" & "Saturn.exe""")
+        Call savestring(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "SaturnMarbleWidget", """" & App.Path & "\" & "Saturn.exe""")
     Else
-        Call savestring(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "SaturnWidget", vbNullString)
+        Call savestring(HKEY_CURRENT_USER, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "SaturnMarbleWidget", vbNullString)
     End If
 
     ' save the values from the general tab
