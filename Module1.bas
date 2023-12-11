@@ -1892,7 +1892,7 @@ Public Sub unloadAllForms(ByVal endItAll As Boolean)
     
     ' unload the native VB6 and RC5 forms
     
-    Unload saturnPrefs
+    Unload planetPrefs
     Unload helpForm
     Unload frmLicence
     Unload frmTimer
@@ -1903,7 +1903,7 @@ Public Sub unloadAllForms(ByVal endItAll As Boolean)
     
     ' remove all variable references to each form in turn
     
-    Set saturnPrefs = Nothing
+    Set planetPrefs = Nothing
     Set helpForm = Nothing
     Set fMain.aboutForm = Nothing
     Set fMain.saturnForm = Nothing
@@ -1963,29 +1963,29 @@ End Sub
 Public Sub makeProgramPreferencesAvailable()
     On Error GoTo makeProgramPreferencesAvailable_Error
     
-    If saturnPrefs.IsVisible = False Then
+    If planetPrefs.IsVisible = False Then
     
-        If saturnPrefs.WindowState = vbMinimized Then
-            saturnPrefs.WindowState = vbNormal
+        If planetPrefs.WindowState = vbMinimized Then
+            planetPrefs.WindowState = vbNormal
             'Call readPrefsPosition
         End If
                 ' set the current position of the utility according to previously stored positions
 
-        If saturnPrefs.WindowState = vbNormal Then
+        If planetPrefs.WindowState = vbNormal Then
         
             Call readPrefsPosition
             
-            If saturnPrefs.Left = 0 Then
-                If ((fMain.saturnForm.Left + fMain.saturnForm.Width) * screenTwipsPerPixelX) + 200 + saturnPrefs.Width > screenWidthTwips Then
-                    saturnPrefs.Left = (fMain.saturnForm.Left * screenTwipsPerPixelX) - (saturnPrefs.Width + 200)
+            If planetPrefs.Left = 0 Then
+                If ((fMain.saturnForm.Left + fMain.saturnForm.Width) * screenTwipsPerPixelX) + 200 + planetPrefs.Width > screenWidthTwips Then
+                    planetPrefs.Left = (fMain.saturnForm.Left * screenTwipsPerPixelX) - (planetPrefs.Width + 200)
                 End If
             End If
             
-            If saturnPrefs.Left < 0 Then saturnPrefs.Left = 0
-            If saturnPrefs.Top < 0 Then saturnPrefs.Top = 0
+            If planetPrefs.Left < 0 Then planetPrefs.Left = 0
+            If planetPrefs.Top < 0 Then planetPrefs.Top = 0
             
-            saturnPrefs.show  ' show it again
-            saturnPrefs.SetFocus
+            planetPrefs.show  ' show it again
+            planetPrefs.SetFocus
         End If
     End If
     
@@ -2015,15 +2015,15 @@ Public Sub readPrefsPosition()
 
     ' if a current location not stored then position to the middle of the screen
     If PrFormXPosTwips <> "" Then
-        saturnPrefs.Left = Val(PrFormXPosTwips)
+        planetPrefs.Left = Val(PrFormXPosTwips)
     Else
-        saturnPrefs.Left = screenWidthTwips / 2 - saturnPrefs.Width / 2
+        planetPrefs.Left = screenWidthTwips / 2 - planetPrefs.Width / 2
     End If
 
     If PrFormYPosTwips <> "" Then
-        saturnPrefs.Top = Val(PrFormYPosTwips)
+        planetPrefs.Top = Val(PrFormYPosTwips)
     Else
-        saturnPrefs.Top = Screen.Height / 2 - saturnPrefs.Height / 2
+        planetPrefs.Top = Screen.Height / 2 - planetPrefs.Height / 2
     End If
 
    On Error GoTo 0
@@ -2044,9 +2044,9 @@ Public Sub writePrefsPosition()
         
    On Error GoTo writePrefsPosition_Error
 
-    If saturnPrefs.WindowState = vbNormal Then ' when vbMinimised the value = -48000  !
-        PrFormXPosTwips = LTrim$(Str$(saturnPrefs.Left))
-        PrFormYPosTwips = LTrim$(Str$(saturnPrefs.Top))
+    If planetPrefs.WindowState = vbNormal Then ' when vbMinimised the value = -48000  !
+        PrFormXPosTwips = LTrim$(Str$(planetPrefs.Left))
+        PrFormYPosTwips = LTrim$(Str$(planetPrefs.Top))
         
         ' now write those params to the toolSettings.ini
         sPutINISetting softwarePlanet, "formXPos", PrFormXPosTwips, StSettingsFile
@@ -2058,7 +2058,7 @@ Public Sub writePrefsPosition()
 
 writePrefsPosition_Error:
 
-    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure writePrefsPosition of Form saturnPrefs"
+    MsgBox "Error " & Err.Number & " (" & Err.Description & ") in procedure writePrefsPosition of Form planetPrefs"
 End Sub
 
 

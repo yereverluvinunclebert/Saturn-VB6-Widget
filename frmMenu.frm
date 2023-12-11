@@ -350,12 +350,12 @@ Private Sub mnuLockWidget_Click()
         mnuLockWidget.Checked = False
         PrPreventDragging = "0"
         saturnWidget.Locked = False
-        saturnPrefs.chkPreventDragging.Value = 0
+        planetPrefs.chkPreventDragging.Value = 0
     Else
         mnuLockWidget.Checked = True
         saturnWidget.Locked = 1
         PrPreventDragging = "1"
-        saturnPrefs.chkPreventDragging.Value = 1
+        planetPrefs.chkPreventDragging.Value = 1
     End If
 
     sPutINISetting softwarePlanet, "preventDragging", PrPreventDragging, StSettingsFile

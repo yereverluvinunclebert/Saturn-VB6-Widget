@@ -190,7 +190,7 @@ Private Sub saturnForm_MouseUp(Button As Integer, Shift As Integer, X As Single,
     If saturnWidget.Locked = True Then Exit Sub
     
     ' no point in saving when prefs are visible.
-    If saturnPrefs.IsVisible = False Then ' checks without activating the form - important!.
+    If planetPrefs.IsVisible = False Then ' checks without activating the form - important!.
        PrMaximiseFormX = Str$(saturnForm.Left) ' saving in pixels
        PrMaximiseFormY = Str$(saturnForm.Top)
        

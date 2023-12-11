@@ -339,6 +339,8 @@ Private Sub W_MouseWheel(ByVal MouseKeys As Long, ByVal Rotation As Long, ByVal 
         End If
         PrGaugeSize = LTrim$(Str$(saturnWidget.Zoom * 100)) ' store the value dynamically
         sPutINISetting softwarePlanet, "gaugeSize", PrGaugeSize, StSettingsFile
+        
+        If planetPrefs.IsVisible = True Then planetPrefs.sliGaugeSize = Val(PrGaugeSize)
     End Select
 
    On Error GoTo 0
