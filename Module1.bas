@@ -333,6 +333,10 @@ Public PrFirstTimeRun  As String
 ' General storage variables declared
 Public PrSettingsDir As String
 Public StSettingsFile As String
+
+Public gblTrinketsDir      As String
+Public gblTrinketsFile      As String
+
 Public PrMaximiseFormX As String
 Public PrMaximiseFormY As String
 Public PrLastSelectedTab As String
