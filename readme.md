@@ -133,16 +133,16 @@ If you are just a casual user of desktop programs then simply download the SETUP
  
  ![vb6-logo](https://github.com/yereverluvinunclebert/-JustClock-VB6/assets/2788342/861f1ce1-7058-4d09-af94-daab9206ca86)
  
- * Uses the latest version of the RC6 Cairo framework from Olaf Schmidt.
+ * Uses the latest version of the RC5 Cairo framework from Olaf Schmidt.
  
- During development the RC6 components need to be registered. These scripts are 
+ During development the RC5 components need to be registered. These scripts are 
  used to register. Run each by double-clicking on them.
  
-	RegisterRC6inPlace.vbs
-	RegisterRC6WidgetsInPlace.vbs
+	RegisterRC5inPlace.vbs
+	RegisterVBWidgetsInPlace.vbs
  
- During runtime on the users system, the RC6 components are dynamically 
- referenced using modRC6regfree.bas which is compiled into the binary.	
+ During runtime on the users system, the RC5 components are dynamically 
+ referenced using modRC5regfree.bas which is compiled into the binary.	
  
  
  Requires a Saturn folder in C:\Users\<user>\AppData\Roaming\ 
@@ -197,7 +197,7 @@ If you are just a casual user of desktop programs then simply download the SETUP
 	VisualBasic Runtime Objects and Procedures  
 	VisualBasic Objects and Procedures  
 	OLE Automation  
-	vbRichClient6  
+	vbRichClient5 
  
  
  LICENCE AGREEMENTS:
