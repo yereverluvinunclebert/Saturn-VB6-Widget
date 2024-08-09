@@ -1,4 +1,4 @@
-# Saturn-Widget-VB6 arse
+# Saturn-Widget-VB6
 Steampunk Saturn Desktop Widget, written in VB6 for Windows and ReactOS. Created for XP, Vista, Win7, 8, 10/11+, ReactOS as well as Linux or the Apple Mac's OS/X with Wine. This Saturn Desktop Widget is an attractive dieselpunk VB6 widget for your desktop. This VB6 widget provides a simple moveable marble globe complete with rings
 
 ![saturn](https://github.com/yereverluvinunclebert/Saturn-Ywidget/assets/2788342/058486b4-6f2c-4c5f-b287-31afcd9015ca)
