@@ -68,8 +68,10 @@ If you are just a casual user of desktop programs then simply download the SETUP
  Built using: VB6, MZ-TOOLS 3.0, VBAdvance, CodeHelp Core IDE Extender
  Framework 2.2 & Rubberduck 2.4.1, RichClient 6
  
- Links:
- 
+ **Links:**
+
+  External links are provided for reference only. Please verify sources before downloading any third-party software.
+  
 	https://www.vbrichclient.com/#/en/About/
 	MZ-TOOLS https://www.mztools.com/  
 	CodeHelp http://www.planetsourcecode.com/vb/scripts/ShowCode.asp?txtCodeId=62468&lngWId=1  
@@ -191,19 +193,16 @@ folder as the binary the program will run without the need to register the OCX m
  
  In the VB6 IDE - project - references - browse - select the OLEGuids.tlb
  
-
-
  * SETUP.EXE - The program is currently distributed using setup2go, a very useful 
  and comprehensive installer program that builds a .exe installer. Youll have to 
- find a copy of setup2go on the web as it is now abandonware. Contact me
- directly for a copy. The file "install Saturn 0.1.0.s2g" is the configuration 
- file for setup2go. When you build it will report any errors in the build.
+ find a copy of setup2go on the web as it is now abandonware. Setup2Go is no longer 
+ maintained. Users should ensure they obtain and use it in accordance with its original licensing terms.
  
  * HELP.CHM - the program documentation is built using the NVU HTML editor and 
  compiled using the Microsoft supplied CHM builder tools (HTMLHelp Workshop) and 
  the HTM2CHM tool from Yaroslav Kirillov. Both are abandonware but still do
  the job admirably. The HTML files exist alongside the compiled CHM file in the 
- HELP folder.
+ HELP folder. Users should ensure they obtain and use this tool in accordance with its original licensing terms.
  
   Project References:
 
@@ -214,11 +213,15 @@ folder as the binary the program will run without the need to register the OCX m
 	vbRichClient5 
  
  
- LICENCE AGREEMENTS:
+**LICENCE AGREEMENTS:**
  
  Copyright © 2023 Dean Beedell
+
+ Code: GNU GPL vX
+
+ Artwork/Images: © Dean Beedell – separate license applies
  
- In addition to the GNU General Public Licence please be aware that you may use 
+ Please be aware that you may use 
  any of my own imagery in your own creations but commercially only with my 
  permission. In all other non-commercial cases I require a credit to the 
  original artist using my name or one of my pseudonyms and a link to my site. 
